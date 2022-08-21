@@ -1,0 +1,627 @@
+@import url('fonts.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1920px;
+    background: #162831
+}
+
+.block {
+    margin-bottom: 150px;
+}
+
+.header {
+    width: 1298px;
+}
+
+.nav {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.img_url {
+    margin: 0;
+}
+
+.nav_inner {
+    margin: 0 214px;
+}
+
+.logo, .sub_btn {
+    margin: 0;
+}
+
+.nav__link {
+    font-family: 'Proxima Regular';
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 50px 0 0; 
+}
+
+.nav__link:last-child {
+    margin-right: 0px;
+}
+
+.sub_btn {
+    font-family: 'Proxima Regular';
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 15px;
+    background-color: #018ABE;
+    border-radius: 3px;
+}
+
+.preview {
+    background: url('../images/header_bg.png') no-repeat center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.preview_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.preview_title h1 {
+    margin: 0 66px;
+    color: #fff;
+    font-family: 'El Messiri';
+    font-size: 24px;
+    text-align: center;
+}
+
+.pr_icon, .title_icon {
+    margin: 0;
+}
+
+.prev_text {
+    width: 547px;
+    margin: 0;
+    font-family: 'El Messiri';
+    font-size: 64px;
+    color: #fff;
+    word-break: keep-all;
+    text-align: center;
+    line-height: 140%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.title_h1 {
+    font-size: 42px;
+    font-family: 'ElMessiri Bold';
+    font-weight: 700;
+    margin: 0 45px;
+    color: #fff;
+}
+
+.services {
+    width: 1298px;
+}
+
+.service_blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
+.service_item {
+    background: url('../images/img1.png') no-repeat center;
+    min-height: 258px;
+    min-width: 416px;
+    margin: 0;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transition: all .3s linear;
+    transition-delay: .2s;
+}
+
+.service_item:nth-child(1) {
+    grid-area: span 2 / span 1;
+    padding: 456px 0 30px 50px;
+}
+
+.service_name {
+    font-size: 24px;
+    font-family: 'ElMessiri Bold';
+    color: #fff;
+    line-height: 140%;
+    text-decoration: none;
+    margin: 0;
+}
+
+.service_item:hover {
+    border-bottom: 7px solid #018ABE;
+}
+
+.reviews {
+    width: 1736px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.rev_item {
+    width: 636px;
+    height: 350px;
+    margin: 0 25px;
+    background: #018ABE;
+    border-radius: 10px;
+    padding: 53px 60px;
+}
+
+.rev_name {
+    font-family: 'Proxima Regular';
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.rev_text {
+    font-family: 'Proxima Light';
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    line-height: 140%;
+    white-space: pre-line;
+}
+
+.prev, .next {
+    width: 500px;
+    height: 276px;
+    opacity: .4;
+}
+
+.prev .rev_name, .next .rev_name {
+    font-size: 16px;
+}
+
+.prev .rev_text, .next .rev_text {
+    font-size: 10px;
+}
+
+.rev_input {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 10px;
+    opacity: .4;
+    transition: all .2s linear;
+}
+
+.rev_input:hover {
+    opacity: 1;
+}
+
+.rev_scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_item {
+    width: 1076px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.about_item:last-child {
+    margin-bottom: 0;
+}
+
+.about_item img {
+    margin: 0
+}
+
+.about_info {
+    width: 466px;
+    margin: 0;
+}
+
+.about_info h1 {
+    font-family: 'Proxima Regular';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 30px 0;
+    line-height: 140%;
+}
+
+.about_info p {
+    font-family: 'Proxima Light';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 140%;
+    white-space: pre-line;
+}
+
+.price_blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_list {
+    margin: 0 134px 0 0;
+}
+
+.service_cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.service_cost:last-child {
+    margin-bottom: 0;
+}
+
+.title_icon {
+    margin-right: 20px;
+}
+
+.pr_text {
+    width: 268px;
+    font-size: 18px;
+    font-family: 'Proxima Regular';
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 23px;
+}
+
+.pr_cost {
+    width: 87px;
+    text-align: right;
+    font-size: 18px;
+    font-family: 'ElMessiri Bold';
+    font-weight: 700;
+    color: #fff;
+}
+
+.img_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.price_img {
+    margin-bottom: 30px;
+}
+
+.img_text {
+    text-decoration: none;
+    font-family: 'ElMessiri Bold';
+    font-weight: 700;
+    font-size: 21px;
+    color: #fff;
+}
+
+.map {
+    border-radius: 10px;
+    margin: 0 48px 0 0;
+}
+
+.contact_blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.contact {
+    height: 290px;
+    background: #018ABE;
+    border-radius: 10px;
+    padding: 35px 45px;
+    margin-bottom: 24px;
+}
+
+.contact:last-child {
+    margin: 0;
+}
+
+.cont_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 22px 0;
+}
+
+.cont_item:last-child {
+    margin: 0;
+}
+
+.contact_name {
+    font-family: 'ElMessiri Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.item_icon {
+    margin: 0 20px 0 0;
+}
+
+.item_text {
+    font-family: 'Proxima Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    width: 262px;
+    margin: 0;
+}
+
+.contact_items {
+    margin-bottom: 30px;
+}
+
+.subs {
+    background: #fff;
+    font-family: 'Proxima Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: #018ABE;
+    padding: 9px 15px;
+    text-decoration: none;
+    border: 0;
+    border-radius: 3px;
+}
+
+.contact_blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 1298px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    font-family: 'Proxima Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: 'Proxima Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    margin: 0;
+}
+
+
+.nw_block {
+    margin-bottom: 57px;
+}
+
+.nw_date {
+    background: #018ABE;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-family: 'Proxima Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+.nw_main_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 60px 0;
+}
+
+.nw_title {
+    margin: 0;
+    font-family: 'ElMessiri Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 140%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.news_items {
+    width: 1296px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.news_block {
+    width: 416px;
+    height: 258px;
+    background: url('../images/img2.png') no-repeat center / cover;
+    padding: 35px 0 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nw_footer {
+    margin-top: 100px;
+}
+
+.new_text {
+    width: 526px;
+    font-family: 'Proxima Light';
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    line-height: 140%;
+    white-space: pre-line;
+}
+
+.text_block {
+    margin-right: 134px;
+}
+
+.text_block .nw_title {
+    margin: 45px 0 30px 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1296px;
+}
+
+.blog_items {
+    width: 1298px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+    border: 2px solid #018ABE;
+    border-radius: 20px;
+    margin: 0 0 45px 0;
+}
+
+.item img {
+    width: 564px;
+    height: 430px;
+    border-radius: 10px;
+    margin: 0 50px 0 0;
+}
+
+.blog_text {
+    width: 564px;
+    font-family: 'Proxima Light';
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 0 40px 0;
+    line-height: 140%;
+    white-space: pre-line;
+}
+
+.blog_block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+}
+
+.blog_date {
+    background: #018ABE;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-family: 'Proxima Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0 30px 0;
+}
+
+.blog_title {
+    margin: 0 0 20px 0;
+    font-family: 'ElMessiri Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 140%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog_readmore {
+    padding: 10px 20px;
+    background: #018ABE;
+    border-radius: 5px;
+    font-family: 'Proxima Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    text-decoration: none;
+    margin: 0
+}
